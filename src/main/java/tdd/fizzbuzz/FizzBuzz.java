@@ -7,15 +7,17 @@ public class FizzBuzz {
     public static final String WHIZZ = "Whizz";
 
     public String countOff(Integer order) {
+        StringBuilder result = new StringBuilder();
+
         if (order % 3 == 0) {
-            return FIZZ;
+            result.append(FIZZ);
         }
-        else if (order % 5 == 0) {
-            return BUZZ;
+        if (order % 5 == 0) {
+            result.append(BUZZ);
         }
-        else if (order % 7 == 0) {
+        if (order % 7 == 0) {
             return WHIZZ;
         }
-        return order.toString();
+        return (result.length()>0) ? result.toString() : order.toString();
     }
 }
