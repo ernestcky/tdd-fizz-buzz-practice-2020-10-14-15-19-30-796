@@ -58,7 +58,8 @@ public class FizzBuzzTest {
         assertEquals(expected, fizzBuzz.countOff(order));
     }
 
-    @Test void should_return_fizzbuzz_when_count_off_given_order_multiple_3_and_5() {
+    @Test
+    void should_return_fizzbuzz_when_count_off_given_order_multiple_3_and_5() {
         int order = 15;
         String expected = "FizzBuzz";
 
@@ -67,7 +68,8 @@ public class FizzBuzzTest {
         assertEquals(expected, fizzBuzz.countOff(order));
     }
 
-    @Test void should_return_fizzwhizz_when_count_off_given_order_multiple_3_and_7() {
+    @Test
+    void should_return_fizzwhizz_when_count_off_given_order_multiple_3_and_7() {
         int order = 21;
         String expected = "FizzWhizz";
 
@@ -76,5 +78,13 @@ public class FizzBuzzTest {
         assertEquals(expected, fizzBuzz.countOff(order));
     }
 
+    @Test
+    void should_return_fizzbuzzwhizz_when_count_off_given_order_multiple_3_and_5_and_7() {
+        int order = 105;
+        String expected = "FizzBuzzWhizz";
 
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        assertEquals(expected, fizzBuzz.countOff(order));
+    }
 }
