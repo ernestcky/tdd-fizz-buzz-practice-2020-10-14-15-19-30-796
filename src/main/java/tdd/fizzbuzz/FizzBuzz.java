@@ -16,7 +16,7 @@ public class FizzBuzz {
             result.append(BUZZ);
         }
         if (order % 7 == 0) {
-            return WHIZZ;
+            result.append(WHIZZ);
         }
         return (result.length()>0) ? result.toString() : order.toString();
     }
